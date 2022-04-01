@@ -1,0 +1,16 @@
+<h1 class="text-center mt-3">Ejercicios 1 y 2</h1>
+<div class="container card mt-5">
+  <div class="form mt-3">
+      <label>Edad uno: </label><input class="form-control w-100" type="number" [(ngModel)]="operacion.numberOne" min="0">
+      <label>Edad dos:</label><input class="form-control w-100" type="number" [(ngModel)]="operacion.numberTwo" min="0">
+      <label>Promedio de edades</label>
+      <input class="form-control w-100" type="number" [(ngModel)]="operacion.average" disabled>
+      <label>Suma de edades</label>
+      <input class="form-control w-100" type="number" [(ngModel)]="operacion.result" disabled>
+      <div>
+        <button class="btn btn-outline-primary m-3" (click)=calculate()>Calcular</button>
+        <button class="btn btn-outline-primary m-3" (click)=operacion.cleanForm()>Limpiar cuadros de textos</button>   
+      </div>
+  </div>
+</div>
+<footer class="text-center text-muted">© 2021 Copyright: Lucia Cardozo 4°A</footer>
